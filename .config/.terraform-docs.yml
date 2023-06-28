@@ -14,8 +14,8 @@ sections:
     - modules
 
 content: |-
-  # <Cloud> <Main resource> Terraform module
-  A Terraform module which configures your <Cloud> <Main resource>. <Relevant docs>
+  # AWS Cloudwatch OAM Terraform module
+  A Terraform module which configures your AWS Cloudwatch OAM. Read [this](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html) page for more information.
   {{ .Header }}
 
   ## Example
