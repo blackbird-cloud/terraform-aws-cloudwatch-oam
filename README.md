@@ -1,7 +1,8 @@
 <!-- BEGIN_TF_DOCS -->
-# AWS Cloudwatch OAM Terraform module
-A Terraform module which configures your AWS Cloudwatch OAM. Read [this](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html) page for more information.
-[![blackbird-logo](https://raw.githubusercontent.com/blackbird-cloud/terraform-module-template/main/.config/logo_simple.png)](https://www.blackbird.cloud)
+# Terraform Aws Cloudwatch Oam Module
+Terraform module to create an AWS CloudWatch OAM
+
+[![blackbird-logo](https://raw.githubusercontent.com/blackbird-cloud/terraform-module-template/main/.config/logo_simple.png)](https://blackbird.cloud)
 
 ## Example
 ```hcl
@@ -58,5 +59,5 @@ Checkout our other :point\_right: [terraform modules](https://registry.terraform
 
 ## Copyright
 
-Copyright © 2017-2023 [Blackbird Cloud](https://www.blackbird.cloud)
+Copyright © 2017-2024 [Blackbird Cloud](https://blackbird.cloud)
 <!-- END_TF_DOCS -->
