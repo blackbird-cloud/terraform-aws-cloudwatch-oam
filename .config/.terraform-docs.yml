@@ -14,8 +14,8 @@ sections:
     - modules
 
 content: |-
-  # AWS Cloudwatch OAM Terraform module
-  A Terraform module which configures your AWS Cloudwatch OAM. Read [this](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html) page for more information.
+  {{ include "./.config/title.md"}}
+
   {{ .Header }}
 
   ## Example
