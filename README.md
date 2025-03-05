@@ -1,3 +1,4 @@
+<!-- BEGIN_TF_DOCS -->
 # Terraform Aws Cloudwatch Oam Module
 Terraform module to create an AWS CloudWatch OAM
 
@@ -10,7 +11,7 @@ module "sink" {
   version = "~> 1"
 
   name            = "mysink"
-  organization_id = "o-a1235"
+  organization_id = "o-a1234"
 }
 ```
 
@@ -61,3 +62,4 @@ Checkout our other :point\_right: [terraform modules](https://registry.terraform
 ## Copyright
 
 Copyright © 2017-2025 [Blackbird Cloud](https://blackbird.cloud)
+<!-- END_TF_DOCS -->

@@ -3,5 +3,5 @@ module "sink" {
   version = "~> 1"
 
   name            = "mysink"
-  organization_id = "o-a1235"
+  organization_id = "o-a1234"
 }
