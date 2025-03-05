@@ -13,3 +13,13 @@ variable "tags" {
   description = "A map of tags to assign to the resource. If configured with a provider default_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level."
   default     = {}
 }
+
+variable "shared_resources" {
+  type        = list(string)
+  description = "List of data resources to be shared"
+  default = [
+    "AWS::Logs::LogGroup",
+    "AWS::CloudWatch::Metric",
+    "AWS::XRay::Trace"
+  ]
+}

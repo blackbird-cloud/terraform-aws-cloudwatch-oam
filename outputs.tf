@@ -3,6 +3,11 @@ output "sink" {
   description = "The Cloudwatch OAM Sink"
 }
 
+output "shared_resources" {
+  value       = var.shared_resources
+  description = "List of data resources to be shared"
+}
+
 output "stackset_template" {
   value = templatefile("${path.module}/stackset.tmpl", {
     account_id = data.aws_caller_identity.default.account_id
