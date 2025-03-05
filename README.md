@@ -1,4 +1,3 @@
-<!-- BEGIN_TF_DOCS -->
 # Terraform Aws Cloudwatch Oam Module
 Terraform module to create an AWS CloudWatch OAM
 
@@ -42,12 +41,14 @@ module "sink" {
 |------|-------------|------|---------|:--------:|
 | <a name="input_name"></a> [name](#input\_name) | The Name of the Cloudwatch OAM sink. | `string` | n/a | yes |
 | <a name="input_organization_id"></a> [organization\_id](#input\_organization\_id) | Your AWS Organization ID, used in the AWS Cloudwatch Sink Access policy to accept incoming Cloudwatch metrics and logs, and XRay traces. | `string` | n/a | yes |
+| <a name="input_shared_resources"></a> [shared\_resources](#input\_shared\_resources) | List of data resources to be shared | `list(string)` | <pre>[<br/>  "AWS::Logs::LogGroup",<br/>  "AWS::CloudWatch::Metric",<br/>  "AWS::XRay::Trace"<br/>]</pre> | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to assign to the resource. If configured with a provider default\_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level. | `map(string)` | `{}` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
+| <a name="output_shared_resources"></a> [shared\_resources](#output\_shared\_resources) | List of data resources to be shared |
 | <a name="output_sink"></a> [sink](#output\_sink) | The Cloudwatch OAM Sink |
 | <a name="output_stackset_template"></a> [stackset\_template](#output\_stackset\_template) | The AWS Cloudformation Stackset template to use for creating AWS Cloudwatch OAM links. |
 
@@ -59,5 +60,4 @@ Checkout our other :point\_right: [terraform modules](https://registry.terraform
 
 ## Copyright
 
-Copyright © 2017-2024 [Blackbird Cloud](https://blackbird.cloud)
-<!-- END_TF_DOCS -->
+Copyright © 2017-2025 [Blackbird Cloud](https://blackbird.cloud)

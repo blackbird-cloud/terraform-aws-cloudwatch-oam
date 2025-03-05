@@ -20,11 +20,7 @@ resource "aws_oam_sink_policy" "default" {
         Principal = "*"
         Condition = {
           "ForAllValues:StringEquals" = {
-            "oam:ResourceTypes" = [
-              "AWS::Logs::LogGroup",
-              "AWS::CloudWatch::Metric",
-              "AWS::XRay::Trace"
-            ]
+            "oam:ResourceTypes" = var.shared_resources
           }
           "ForAnyValue:StringEquals" : {
             "aws:PrincipalOrgID" : "${var.organization_id}"
